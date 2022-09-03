@@ -1,0 +1,70 @@
+
+@keyframes fade-in {
+  from {
+      width: 0;
+  }
+  to {
+      width: 15vw;
+  }
+}
+
+@keyframes apper {
+  from {
+      right: -500px;
+  }
+  to{
+      right: 0
+  }
+}
+
+@keyframes fade-in-title {
+  from{
+      width: 0;
+  } to {
+      width: 8vw;
+  }
+}
+:root{
+  --bg-image: url('../src/assets/backgroundDark.gif');
+  --bg-color: rgba(32, 2, 80, 0.671);
+  --bdr-bottom: 1px solid rgb(132, 2, 192);
+  --bdr-top: 1px solid rgb(132, 2, 192);
+  --txt-shadow : 2px 2px 5px rgb(101, 255, 147),
+                -2px -2px 5px rgb(211, 101, 255),
+                -2px 2px 5px rgb(255, 101, 242),
+                2px -2px 5px rgb(101, 255, 147);
+  --bx-shadow : 3px 3px 5px 0px rgb(101, 255, 147), 
+                -3px -3px 5px 0px  rgb(211, 101, 255),
+                -3px 3px 5px 0px rgb(255, 101, 242),
+                3px -3px 5px 0px rgb(101, 255, 147);
+  --bdr-green: 2px solid rgb(101, 255, 147);
+  --bdr-violet: 2px solid rgb(211, 101, 255);
+  --bdr-pink: 2px solid rgb(255, 101, 242);
+  --animation-fadeIn : fade-in;
+  --animation-apper: apper;
+  --animation-fadeInTitle: fade-in-title;
+  --text-color: whitesmoke;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family:'Consolas';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  margin: 0 1vw;
+}
